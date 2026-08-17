@@ -893,7 +893,7 @@ function sendWA(){
   else{selPeps.forEach(key=>{let p=P[key];let fM=Math.round(p.mxn*(1-disc));let fU=Math.round(p.usd*(1-disc));totMXN+=fM;totUSD+=fU;list+='• '+p.name+' — $'+fM.toLocaleString()+' MXN ($'+fU+' USD)\n';});}
   let discTxt=selPkg?t('pkg_badge'):(Math.round(disc*100)+'% OFF');
   let msg=t('wa_guided')+sxLbl+' · '+age+(lang==='en'?' yrs':' años')+' · '+w+'kg · '+h+'cm\n'+(lang==='en'?'Goal: ':'Objetivo: ')+(g[goal]||goal)+'\n\n'+(lang==='en'?'*My selection:*':'*Mi selección:*')+'\n'+list+'\n*'+discTxt+'*\n*Total: $'+totMXN.toLocaleString()+' MXN / $'+totUSD+' USD*\n\n'+t('wa_end');
-  window.open('https://wa.me/529983028826?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/529989072578?text='+encodeURIComponent(msg),'_blank');
 }
 
 /* GLP TOOL */
